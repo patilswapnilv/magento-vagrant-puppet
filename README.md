@@ -19,7 +19,7 @@ cd ~/Code
 
 3. Grab the magento-vagrant-puppet code
 ```
-git clone https://github.com/matthewsplant/magento-vagrant-puppet.git project_dir
+git clone https://github.com/patilswapnilv/magento-vagrant-puppet.git project_dir
 cd project_dir
 ```
 
@@ -38,9 +38,9 @@ WHERE path in ('web/unsecure/base_url', 'web/secure/base_url')
 ```
  * Clear the Magento cache
 
-6. Add *magento.localhost* to your hosts /etc/hosts file
+6. Add *local.magento.dev* to your hosts /etc/hosts file
 ```
-    127.0.0.1       magento.localhost
+    127.0.0.1       local.magento.dev
 ```
 
 7. **Spin up your new DevOps environment**
@@ -66,7 +66,7 @@ This virtual machine is optimized for ease of use.  Therefore it is not meant fo
  * Magento Admin - admin/123123abc
 
 #### Virtual Machine Specifications
- * Ubuntu 12.04 LTS aka "precise32"
+ * Ubuntu 14.04 LTS aka "trusty64"
  * Apache 2.2.22
  * MySQL 5.5.31
  * PHP 5.3.10
