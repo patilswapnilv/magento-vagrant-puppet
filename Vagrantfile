@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   # config.vm.box = "base"
-  config.vm.box = "precise32"
+  config.vm.box = "trusty64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777,fmode=777"] # VirtualBox shared directory workaround
 
   # Set the virtual machine host name
-  config.vm.hostname = "magento.localhost"
+  config.vm.hostname = "local.magento.dev"
 
 
   # ADDITIONAL CONFIGURATIONS
